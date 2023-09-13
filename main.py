@@ -3,11 +3,11 @@ def square(n):
     if n % 1 == 0:
         print("int")
         print(n*n)
-        return("int",n*n)
+        return(n*n)
     else:
         print("float")
         print(n*n)
-        return("float",n*n)
+        return(n*n)
     """
     This function takes a number as input and returns its square.
     :param number: int or float
@@ -21,13 +21,15 @@ print("******************")
 
 
 def reverse_string(s):
-    a = []
     b = 0
+    c = ""
     for i in range(len(s)-1,-1,-1):
-        a.append(s[i])
+        
+        c+=s[i]
         b += 1
-    print(s,a)
-    return(s,a)
+    
+    print(c)
+    return(c)
     """
     This function takes a string as input and returns its reverse.
     :param s: str
@@ -76,14 +78,22 @@ def factorial(n):
 factorial(3)
 print("******************")
 def find_maximum(lst):
-    
+    a = lst[0]
+    for i in range(0,len(lst)-1):
+        if a<=lst[i+1]:
+            a = lst[i+1]
+            print(a)
+        
+    print(a)
+    return(a)
     """
     This function takes a list of numbers lst and returns the maximum number in the list.
     :param lst: list of int
     :return: int, the maximum number in the list
     """
     pass  # Implement your solution here
-
+find_maximum([1,2,3,4,5])
+print("**********************")
 def odd_or_even(n):
     if n%2 == 0:
         print("Even")
@@ -118,7 +128,7 @@ def is_palindrome(s):
             c+=1
             d-=1
 
-    if c == b:
+    if c == b or s =="":
         print("palindrome")
         return(True)
     else:
@@ -134,7 +144,7 @@ def is_palindrome(s):
     :return: bool, `True` if the string is a palindrome, `False` otherwise.
     """
     pass  # Implement your solution here
-is_palindrome("ababa")
+is_palindrome("")
 print("******************")
 
 def prime(pi,pb,pc,pg):

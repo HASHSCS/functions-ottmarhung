@@ -12,6 +12,7 @@ Welcome to your Python functions assignment! In this assignment, you will implem
 5. You can test your implementations locally by running the following command in the terminal:
 
 ```python -m unittest test_main.py```
+``` & C:/Users/88696/AppData/Local/Programs/Python/Python311/python.exe -m unittest c:/Users/88696/functions-ottmarhung/test_main.py      ```
 
 
 ## Grading
